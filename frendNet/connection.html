@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<body>
+    <main>
+    <h4 style="left: 18vw;top:-3.5vh"> 
+       Connection detected!
+    </h4>
+    <img src="images/profile2.png" alt="user" class="userphoto">
+    <h2>
+        <div id="interestSelection" style="top:48vh">
+            <h2> Shared Interests: </h2>    <span id= "interest-name"/></br>
+    </h2>
+</div>
+    <button1 onclick="window.location.href = 'finduser.html';"id = "connectButton">Connect</button1>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script src="connection.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

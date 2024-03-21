@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<style>
+    main{background-color: #ffffff;}
+</style>
+<body>
+    <main>
+        <h4 style= "color:#474360;left: 30vw;width: 20vw;">Walking Meditation</h4>
+        <p id="mindful-text" style="font-size: 1.4rem;">
+            Find a quiet place <b>2 to 5 metres long,</b> begin to walk slowly with your connection. 
+            Focus on the experience of walking, being aware of the sensation of standing and keeping your balance. 
+            When you reach the end of your path, return to where you were, maintain awareness of your sensations.
+        </p>
+        <div class="floor"></div>
+        <img src="images/walking.png" alt="walking meditation" class="exercise3">
+        <button onclick="window.location.href = 'ask_page.html';" class="button2" style="left:28vw;top:-4vh">Back to Connecting</button>
+        <i class="arrow right" onclick="window.location.href = 'meditation1.html';""></i>
+        <i class="arrow left" onclick="window.location.href = 'meditation2.html';"" 
+        style="left:13vw;"></i>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

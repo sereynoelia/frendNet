@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<body>
+    <main>
+        <div id="username">
+        <h2>Enter Name:</h2><br>
+        <br><input type="text" id="sendText"><br>
+
+        <p id="userName"></p>
+    </div>
+    <div id="interestSelection">
+    <h2>Select Interests:</h2> 
+        <div id="interestButtons">
+            <!-- <button id="arts" type="submit" value="arts">Arts</button>                -->
+            <button id="design" type="submit" value="design">Design</button>               
+            <button id="food" type="submit" value="food">Food</button>    
+            <button id="health" type="submit" value="health">Health </button>        
+            <button id="sports" type="submit" value="sports">Sports </button>        
+            <button id="tourism" type="submit" value="tourism">Tourism </button>                   
+            <button id="tech" type="submit" value="tech">Tech</button>                   
+        </div>
+    </div>  
+    <button1 type="button" id="sendButton">Continue</button>
+
+    </main>
+    <script src="./upup.min.js"></script>
+    <script src="getinfo.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

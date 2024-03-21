@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "Avenir Next Bold";
+    src: url(fonts/AvenirNextLTPro-Bold.otf) format("opentype");
+}
+@font-face {
+    font-family: "Avenir Next Black";
+    src: url(fonts/AvenirLTStd-Black.otf) format("opentype");
+}
+@font-face {
+    font-family: "Avenir Next Heavy";
+    src: url(fonts/AvenirLTStd-Heavy.otf) format("opentype");
+}
+@font-face {
+    font-family: "Avenir Next Medium";
+    src: url(fonts/AvenirLTStd-Medium.otf) format("opentype");
+}
+
+html, body {
+    padding:0;
+    margin:0;
+}
+main {
+    height:100vh;
+    width:100vw;
+    background-color: #FFFF76;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    text-align: center;
+    color:#000000;
+    font-family: "Avenir Next Heavy";
+    letter-spacing: 0px;
+    font-size: 6rem;
+    position: absolute;
+    top: 20vh;
+}
+h2,h3{
+    font-family: "Avenir Next Medium";
+    font-size: 1.8rem;
+}
+h3{
+    position: absolute;
+    top: 16vh;
+}
+h4{
+    font-family: "Avenir Next Black";
+    position: absolute;
+    text-align: center;
+    top: 2vh;
+    left: 4vw;
+    width:65vw;
+    font-size: 4rem;
+}
+.button1{
+    background-color: #81FFC0;
+    color: #000000;
+    font-family: "Avenir Next Bold";
+    height:6vh;
+    width:300px;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 28px;
+    margin:20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20vh;
+    box-shadow: 2px 5px 1px rgb(0, 0, 0);
+}
+.logo{
+    margin-top: -15vh;
+    position: absolute;
+    width: 100px;
+}
+#sendText{
+    position: absolute;
+    background-color: white;
+    border-radius: 30px;
+}
+#username{
+    position: absolute;
+    top: 12vh;
+    left: 18vw;
+    width:65vw;
+}
+#interestSelection{
+    position: absolute;
+    left: 18vw; 
+}
+#interestButtons{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: auto auto;
+}
+#sendButton, #connectButton{
+    background-color: #81FFC0;
+    font-family: "Avenir Next Bold";
+    height:6vh;
+    width:300px;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 28px;
+    margin:20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 55vh;
+    box-shadow: 2px 5px 1px rgb(0, 0, 0);
+}
+#connectButton{
+    height: auto;
+    position: absolute;
+    padding: auto;
+    margin-bottom: 100px;
+}
+#endButton{
+    background-color: #000000;;
+    color: white;
+    font-family: "Avenir Next Bold";
+    height: auto;
+    width:300px;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 28px;
+    margin:20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 55vh;
+    bottom: 10vh;
+    position: absolute;
+}
+button{
+    font-family: "Avenir Next Medium";
+    font-size: 1.2rem;
+    background-color: rgb(21, 21, 21);
+    color: white;
+    border:none;
+    border-radius: 6px;
+    padding: 15px;
+    width: 28vw;
+    margin-left:2vw;
+}
+button:hover, button:focus, #sendButton:hover, #connectButton:hover{
+    background-color: white;
+    color: black;
+}
+#endButton:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 2px 5px 1px rgb(0, 0, 0)
+}
+#sendText{
+    font-family: "Avenir Next Medium";
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 1.8rem;
+}
+#interest-name{
+    font-family: "Avenir Next Bold";
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    left: 30vw;
+}
+.question-box{
+    position: absolute;
+    top:22vh;
+    background-color: white;
+    width: 80vw;
+    height: 40vh;
+    border-style: solid;
+    border-color: #000000;
+}
+.question-box:hover{
+    position: absolute;
+    top:22vh;
+    background-color: white;
+    width: 80vw;
+    height: 40vh;
+    box-shadow: 0px 3px 6px rgb(92, 92, 92)
+}
+#askquestion{
+    font-family: "Avenir Next Black";
+    font-size: 3rem;
+    position: relative;
+    padding: 50px;
+    top:3vh;
+    text-align: center;
+    justify-content: center;
+}
+#mindful-text{
+    font-family: "Avenir Next Medium";
+    position: absolute;
+    width: 70vw;
+    color:#474360;
+    text-align:left;
+    left: 15vw;
+    top: 23vh;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+#tip-text{
+    font-family: "Avenir Next Medium";
+    position: absolute;
+    width: 65vw;
+    color:#474360;
+    text-align:left;
+    left: 5vw;
+    top: 16vh;
+    font-size: 1.3rem;
+    line-height: 2;
+}
+.exercise1{
+    position: absolute;
+    left: 15vw;
+    top: 48vh;
+    width: 300px;
+}
+.exercise2{
+    position: absolute;
+    left: 15vw;
+    top: 53vh;
+    width: 500px;
+}
+.exercise3{
+    position: absolute;
+    left: 28vw;
+    top: 60vh;
+    width: 420px;
+}
+.button2{
+    position: absolute;
+    top: 8vh;
+    left: 50vw;
+    background-color: #81FFC0;
+    color: black;
+    font-family: "Avenir Next Bold";
+    height:auto;
+    width:40%;
+    border: none;
+    padding: 15px 50px;
+    text-align: center;
+    font-size: 28px;
+    margin:20px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 55vh;
+    box-shadow: 2px 5px 1px rgb(0, 0, 0);
+}
+.button2:hover{
+    background-color: #000000;
+    color: white;
+}
+.floor{
+    position: absolute;
+    bottom: 0vh;
+    background-color: #474360;
+    width:100vw;
+    height: 10vh;
+}
+.arrow {
+    position: absolute;
+    top:12vh;
+    right: 10vw;
+    border: solid #474360;;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 40px;
+    height: 40px;
+} 
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+.popup{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border: solid #474360;
+    border-width: thick;
+    border-radius: 50px;
+    visibility: hidden;
+  }
+.opentip{
+    visibility: visible;
+}
+.popup2{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border: solid #474360;
+    border-width: thick;
+    border-radius: 50px;
+    visibility: hidden;
+  }
+.tip2{
+    visibility: visible;
+}
+.popup3{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border: solid #474360;
+    border-width: thick;
+    border-radius: 50px;
+    visibility: hidden;
+  }
+.tip3{
+    visibility: visible;
+}
+.popup4{
+    position: absolute;
+    width: 80vw;
+    height: 90vh;
+    background-color: rgb(255, 255, 255);
+    border: solid #474360;
+    border-width: thick;
+    border-radius: 50px;
+    visibility: hidden;
+  }
+.tip4{
+    visibility: visible;
+}
+#xbutton{
+    position: absolute;
+    right: 6vw;
+    top:3vh;
+    font-size: 3rem;
+    font-family: "Avenir Next Bold";
+    color: #474360;
+  }
+.tipimg{
+    position: absolute;
+    left: 15vw;
+    bottom:15vh;
+    width: 50vw;
+}
+.userphoto{
+    position: absolute;
+    top: 17vh;
+    width: 60%;
+}
+.userphoto-small{
+    position: relative;
+    top:-12vh;
+    width: 42%;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<body>
+    <main>
+        <h3 style="top:10vh">Responding to question...</h3>
+        <div class="question-box">
+            <h3 id="askquestion"onclick="window.location.href = 'ask_page.html';">Generate a Question</h3>
+        </div>
+
+        <button1 onclick= "opentip()" id="connectButton">Conversation Tips</button1> 
+        <button1 onclick="window.location.href = 'end.html';"id="endButton">End Connection</button1>
+        <div class="popup" id="popup">
+            <h4 style= "color:#474360;left: 5vw;top:5vh;text-align: left;
+            font-size: 3rem;">Listen & Reflect
+            </h4>
+            <p id="tip-text">It’s hard to pay attention to someone’s words
+                when you’re busy reminding yourself to make regular eye contact. 
+                If these sorts of behaviors would require a significant habit change,
+                you can instead, let people know that you’re on the non-reactive side, 
+                and ask for their patience and understanding. 
+            </p>
+            <img src="images/listen.png" alt="listen&reflect" class="tipimg">
+            <button1 onclick= "closetip()" id="xbutton">x</button1>
+            <i class="arrow right" onclick="tip2()" style="left:38vw;top:80vh;"></i>
+        </div>
+        <div class="popup2" id="popup2">
+            <h4 style= "color:#474360;left: 5vw;top:1vh;text-align: left;
+            font-size: 3rem;">Never Make Assumptions 
+            </h4>
+            <p id="tip-text">
+                Respectfully ask the person speaking for clarification if they say something 
+                you don’t understand or are unsure about.
+                 Most of the time, people believe the other person means one thing, 
+                while they really might mean something entirely different. 
+                There is nothing wrong with having questions as long as you ask them with kindness. 
+            </p>
+            <img src="images/stop.png" alt="listen&reflect" class="tipimg" style="bottom:12vh">
+            <button1 onclick= "closetip()" id="xbutton">x</button1>
+            <i class="arrow right" onclick="tip3()" style="left:38vw;top:80vh;"></i>
+        </div>
+        <div class="popup3" id="popup3">
+            <h4 style= "color:#474360;left: 5vw;top:1vh;text-align: left;
+            font-size: 3rem;">Choose Your Words Wisely 
+            </h4>
+            <p id="tip-text">Think about the question and your answer for at least 10 to 20 seconds… or more. 
+                Something that may be logical to you may not make sense to someone else.
+                <br><br>Words sometimes do more harm than good, which is why you want to use them with care. 
+                The vast majority of people are reluctant to give someone a second chance.
+            </p>
+            <img src="images/brain.png" alt="listen&reflect" class="tipimg" style="bottom:12vh">
+            <button1 onclick= "closetip()" id="xbutton">x</button1>
+            <i class="arrow right" onclick="tip4()" style="left:38vw;top:80vh;"></i>
+        </div>
+        <div class="popup4" id="popup4">
+            <h4 style= "color:#474360;left: 5vw;top:5vh;text-align: left;
+            font-size: 3rem;">Put Yourself in the Shoes of the Other Person
+            </h4>
+            <p id="tip-text" style="top:25vh;">The worldview of people influences their responses 
+                and perceptions of events. Take a step back and try to put yourself 
+                in the shoes of the person you’re speaking with. 
+            </p>
+            <img src="images/shoe.png" alt="listen&reflect" class="tipimg" style="bottom:15vh">
+            <button1 onclick= "closetip()" id="xbutton">x</button1>
+        </div>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+
+        let popup = document.getElementById("popup");
+        let popup2 = document.getElementById("popup2");
+        let popup3 = document.getElementById("popup3");
+        let popup4 = document.getElementById("popup4");
+
+        function opentip(){
+            popup.classList.add("opentip");
+        }
+        function closetip(){
+            popup.classList.remove("opentip");
+            popup2.classList.remove("tip2");
+            popup3.classList.remove("tip3");
+            popup4.classList.remove("tip4");
+        }
+        function tip1(){
+            popup.classList.add("opentip");
+        }
+        function tip2(){
+            popup2.classList.add("tip2");
+        }
+        function tip3(){
+            popup3.classList.add("tip3");
+        }
+        function tip4(){
+            popup4.classList.add("tip4");
+        }
+    </script>
+</body>
+</html>

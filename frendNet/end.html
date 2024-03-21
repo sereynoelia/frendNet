@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<style>
+    main{
+        background-color: white;
+    }
+</style>
+<body>
+    <main>
+        <h3 style="top:10vh; font-family: Avenir Next Bold;"">Great Job Connecting!</h3>
+        <h3 style="font-size:1.6rem;text-align:center;top:20vh;width: 55vw;">Take some time to exchange good-byes and possibly contact information.</h3>
+        <img src="images/phones.png" alt="end" class="img" style="width:50vw">
+        
+        <button onclick="window.location.href = 'index.html';" class="button2" style="left:30%;top:15%;">Back to Home</button>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

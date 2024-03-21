@@ -1,0 +1,27 @@
+{
+
+  "name": "My Basic PWA Promo",
+  "short_name": "Promo",
+  "start_url": ".",
+  "display": "fullscreen",
+  "background_color": "#fff",
+  "description": "A really cool PWA",
+  "theme_color" : "#546AD9",
+  "icons": [
+    {
+      "src": "./images/Icon-vector.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./images/Icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/Icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<style>
+    main{background-color: #ffffff;}
+</style>
+<body>
+    <main>
+        <h4 style= "color:#474360;left: 18vw;">Sitting Meditation</h4>
+        <p id="mindful-text"style=" line-height: 1.8;">Together sit with your backs straight, 
+            feet against the floor and hands in your lap. 
+            Breathing through your nose, focus on your breath 
+            moving out of your body. </p>
+        <div class="floor"></div>
+        <img src="images/sitting.png" alt="sitting meditation" class="exercise1">
+        <button onclick="window.location.href = 'ask_page.html';" class="button2">Back to Connecting</button>
+        <i class="arrow right" onclick="window.location.href = 'meditation2.html';""></i>
+        <i class="arrow left" onclick="window.location.href = 'meditation3.html';"" 
+        style="left:13vw;"></i>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

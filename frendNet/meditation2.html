@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<style>
+    main{background-color: #ffffff;}
+</style>
+<body>
+    <main>
+        <h4 style= "color:#474360;left: 35vw;width: 20vw;">Three Senses</h4>
+        <p id="mindful-text" style="font-size: 1.3rem;">
+            Notice what you are experiencing right now through three senses 
+            - sound, sight, touch. Take a few slow breaths and ask yourself:
+            <br>
+            <b><br>What are three things I can hear? 
+            <br>What are three things I can see?
+            <br>What are three things I can feel?</b>
+            <br><br>Discuss what you are experiencing with your connection.  
+        </p>
+        <img src="images/senses.png" alt="senses meditation" class="exercise2" style="top:55vh;">
+        <button onclick="window.location.href = 'ask_page.html';" class="button2" style="left:28vw;top:30vh;">Back to Connecting</button>
+        <i class="arrow right" onclick="window.location.href = 'meditation3.html';""></i>
+        <i class="arrow left" onclick="window.location.href = 'meditation1.html';"" 
+        style="left:13vw;"></i>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="./images/icons-192.png"/>
+    <meta name="theme-color" content="#546AD9">
+    <title>FrendNet</title>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+</head>
+<body>
+    <main>
+        <h3 style="top:8vh;font-family: Avenir Next Bold;font-size: 3rem;text-decoration: underline;">Ask:</h3>
+        <div class="question-box">
+            <h3 id="askquestion"onclick="window.location.href = 'respond_page.html';"></h3>
+        </div>
+        
+        <button1 onclick="window.location.href = 'meditation1.html';" id="connectButton">Mindful Exercise</button1>
+        <button1 onclick="window.location.href = 'end.html';"id="endButton">End Connection</button1>
+    </main>
+    <script src="./upup.min.js"></script>
+    <script src="question.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline.html',
+            'assets': ['manifest.json']
+        });
+    </script>
+</body>
+</html>
